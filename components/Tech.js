@@ -8,11 +8,11 @@ import { SiCss3 } from 'react-icons/si';
 import { useSpring, animated } from 'react-spring';
 
 export default function Tech() {
-  const badgeAnimation = useSpring({
-    from: { opacity: 0, transform: 'translateY(130px)' },
-    to: { opacity: 3, transform: 'translateY(0)' },
-    delay: 1,
-  });
+//   const badgeAnimation = useSpring({
+//     from: { opacity: 0, transform: 'translateY(-130px)' },
+//     to: { opacity: 3, transform: 'translateY(0)' },
+//     delay: 1,
+//   });
 
   const containerRef = useRef(null);
 
@@ -40,7 +40,7 @@ export default function Tech() {
   return (
     <div className='mask'>
      
-    <animated.div style={badgeAnimation} className="bg-black py-16 text-[var(--highlight)] flex justify-between">
+    <animated.div className="bg-black py-16 text-[var(--highlight)] flex justify-between">
       <div className="flex w-[4000px] gap-[300px]" style={{ overflow: 'auto' }} ref={containerRef}>
         <div className="flex justify-center items-center w-fit">
           <SiNextdotjs className="mx-3" size={30} />
